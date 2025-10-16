@@ -20,6 +20,12 @@ const fake_products = [
         img_src: "product-img-3.jpg",
         price: 4000
     },
+    {
+        id: "4",
+        title: "yoho",
+        img_src: "product-img-3.jpg",
+        price: 4000
+    }
 ]
 
 const Home = () => {
