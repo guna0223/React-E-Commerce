@@ -1,11 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.col{
+
+:root {
+    --margin-bottom: 10px
+}
+
+#card {
+    margin-bottom: var(--margin-bottom);
+    height: fit-content;
+}
+
+.col {
     gap: 10px;
 }
-.card img{
+
+.card img {
+    height: 200px;
+    width: 100%;
+    margin: auto;
     aspect-ratio: 1/1;
 }

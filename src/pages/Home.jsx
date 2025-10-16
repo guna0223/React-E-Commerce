@@ -21,7 +21,7 @@ const fake_products = [
         price: 4000
     },
     {
-        id: "4",
+        id: "4 ",
         title: "yoho",
         img_src: "product-img-3.jpg",
         price: 4000
@@ -31,8 +31,8 @@ const fake_products = [
 const Home = () => {
     return (
         <>
-            <Carousel />
-            <section className="row row-cols-1 row-cols-md-2 g-4">
+            <Carousel /> 
+            <section className="row row-cols-1 row-cols-md-2 g-2 mx-1 mt-2">
                 {
                     fake_products.map((prod) => {
                         return <ProductCard key={prod.id} product={prod} />
