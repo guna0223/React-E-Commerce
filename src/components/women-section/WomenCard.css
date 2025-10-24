@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.women-menu {
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 60%;
+    width: 60%;
+}
+
+.menu-column {
+    flex: 1;
+    padding: 0 10px;
+    background-color: red;
+}
+
+.menu-column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.menu-column ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu-column ul li:hover {
+    text-decoration: underline;
+}

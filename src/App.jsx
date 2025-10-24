@@ -12,7 +12,9 @@ const App = () => {
       <main>
         <Outlet/>
       </main>
-      <footer></footer>
+      <footer>
+        
+      </footer>
     </>
   );
 }

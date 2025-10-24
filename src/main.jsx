@@ -11,6 +11,7 @@ import Contact from './pages/Contact.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import './index.css'
+import Women from './pages/Women.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'Women', element: <Women /> }
     ],
   },
 ])
