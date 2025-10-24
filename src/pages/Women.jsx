@@ -1,4 +1,4 @@
-import WomenCard from "../components/women-section/WomenCard"
+import WomenCard from "../components/women-section/WomenCard";
 
 const Women = () => {
     return (

@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    transition: 500ms;
 }
 
 :root {
@@ -18,20 +18,32 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.product-discount,.product-offer{
-    margin-left: 10px;
+.product-discount,
+.product-offer {
+    margin-left: 10px
 }
-.product-price{
+
+.product-price {
     color: gray;
     text-decoration: line-through;
 }
-.product-offer{
+
+.product-offer {
     color: green;
 }
+
 #card {
     margin-bottom: var(--margin-bottom);
     height: fit-content;
     height: 400px;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#card:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.01);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 #card-description {
@@ -39,13 +51,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
-button.product-btn:hover{
-   background-color: green;
-   outline: none;
+button.product-btn:hover {
+    background-color: green;
+    outline: none;
+    transition: 500ms;
+    transform: scale(1.05);
 }
 
 .col {
@@ -54,7 +68,7 @@ button.product-btn:hover{
 
 .card img {
     height: 200px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     aspect-ratio: 1/1;
 }
