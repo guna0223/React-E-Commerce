@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.carousel{
+    margin-top:57px;
+} 
 .carousel-img img {
     width: 100%;
     aspect-ratio: 16/6;

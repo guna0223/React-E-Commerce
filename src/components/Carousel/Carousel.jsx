@@ -11,25 +11,13 @@ const Carousel = () => {
                 </div>
                 <div className="carousel-inner carousel-img">
                     <div className="carousel-item active">
-                        <img src="images/carousel/img.jpg" className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5 className="text-danger">First slide label</h5>
-                                <p className="text-success">Some representative placeholder content for the first slide.</p>
-                            </div>
+                        <img src="images/carousel/img-1.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
+                        <img src="images/carousel/img-2.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
+                        <img src="images/carousel/img-3.jpg" className="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

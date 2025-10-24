@@ -1,5 +1,28 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --li-color: black:
+}
+
+.navbar-brand {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
 }
