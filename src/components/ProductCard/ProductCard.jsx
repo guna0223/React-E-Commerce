@@ -6,6 +6,7 @@ const img_server_path = "/images/products/"
 
 
 const ProductCard = ({ product }) => {
+ 
     return (
 
         <div className="col col-12 col-sm-6 col-md-4 col-lg-3">
