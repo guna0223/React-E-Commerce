@@ -9,7 +9,7 @@ const WomenCard = ({ product }) => {
                 <div className="card card-section" id="card">
                     <img src={`${img_server_path}${product.img_src}`} className="card-img-top card-img" alt="..." />
                     <div className="card-body">
-                        {/* <h5 className="card-title">{product.id}</h5> */}
+                        <h5 className="card-title">{product.id}</h5>
                         <span className="card-text product-title ">{product.title}</span><br />
                         <span className="crad-text product-price"> ₹ {product.price} </span>
                         <span className="card-text product-discount">{product.discount} %</span>

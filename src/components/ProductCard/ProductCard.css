@@ -70,5 +70,6 @@ button.product-btn:hover {
     height: 200px;
     width: 90%;
     margin: auto;
+    margin-top: 10px;
     aspect-ratio: 1/1;
 }
