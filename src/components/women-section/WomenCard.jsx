@@ -17,6 +17,7 @@ const WomenCard = ({ products }) => {
                         <span className="card-text product-offer"> {products.offer} </span>
                         <span className="card-text text" id="card-description"> {products.description} </span>
                         <button className="btn btn-secondary mt-3 product-btn">Add to Cart</button>
+                        <button className="btn btn-secondary mt-3 view-btn">view</button>
                     </div>
                 </div>
             </div>

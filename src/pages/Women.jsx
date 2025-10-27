@@ -206,14 +206,16 @@ const women_products = [
 const Women = () => {
     return (
         <>
-            <section className="row row-cols-1 row-cols-md-2 g-2 mx-2 mt-2">
-                {
-                    women_products.map((product) => {
-                        return <WomenCard key={product.id} products={product} />
-                    })
-                }
+            <div className="womencard">
+                <section className="row row-cols-1 row-cols-md-2 g-2 mx-2 mt-2">
+                    {
+                        women_products.map((product) => {
+                            return <WomenCard key={product.id} products={product} />
+                        })
+                    }
 
-            </section>
+                </section>
+            </div>
         </>
     )
 

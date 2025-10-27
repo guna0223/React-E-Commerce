@@ -4,7 +4,9 @@
     box-sizing: border-box;
     transition: 500ms;
 }
-
+.womencard{
+    margin-top: 59px;
+}
 :root {
     --margin-bottom: 10px
 }
@@ -51,11 +53,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
-button.product-btn:hover {
+button.view-btn:hover {
     background-color: green;
     outline: none;
     transition: 500ms;
@@ -72,4 +73,7 @@ button.product-btn:hover {
     margin: auto;
     margin-top: 10px;
     aspect-ratio: 1/1;
+}
+.view-btn{
+    float: right;
 }
