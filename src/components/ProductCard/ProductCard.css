@@ -73,3 +73,11 @@ button.product-btn:hover {
     margin-top: 10px;
     aspect-ratio: 1/1;
 }
+@media screen  and (max-width:700px) {
+    div#card{
+        display: grid;
+        grid-template-columns: repeat( 1fr 1fr);
+        width:300px;
+        margin: auto;
+    }
+}
