@@ -5,6 +5,7 @@ import { useCurrency } from "../context/CurrencyContext";
 const img_server_path = "/images/products/";
 
 const ProductDetails = () => {
+  document.title="productdetils";
   const { state } = useLocation();
   const { id } = useParams();
   const { convertPrice, getSymbol, loading } = useCurrency();

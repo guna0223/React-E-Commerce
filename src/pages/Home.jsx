@@ -2,7 +2,7 @@ import Carousel from "../components/Carousel/Carousel";
 import ProductCard from "../components/ProductCard/ProductCard";
 
 
-const fake_products = 
+const fake_products =
     [
         {
             id: "1",
@@ -94,9 +94,10 @@ const fake_products =
             offer: "Flat ₹400 Off",
             description: "Voice-controlled smart speaker with high-fidelity sound and smart home integration."
         }
-];
+    ];
 
 const Home = () => {
+    document.title = "homepage"
     return (
         <>
             <Carousel />

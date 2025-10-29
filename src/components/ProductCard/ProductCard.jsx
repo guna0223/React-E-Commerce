@@ -32,15 +32,21 @@ const ProductCard = ({ product }) => {
               <p className="card-text text-muted">Loading currency...</p>
             ) : (
               <>
-                <p className="card-text mb-1 fw-bold">
+                <p className="card-text mb-1 fw-bold" >
                   {getSymbol()} {converted}
+                </p>
+                <p className="card-text card-text-description text-secondary small">
+                 {product.description}
                 </p>
                 <p className="card-text text-secondary small">
                   (Base: ${product.price} USD)
                 </p>
+                <p className="card-text text-secondary small">
+                  {product.offer} {product.discount}
+                </p>
+
               </>
             )}
-
           </div>
         </Link>
 

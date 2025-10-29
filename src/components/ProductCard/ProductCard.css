@@ -4,10 +4,11 @@
 }
 
 /* make card fill the column height and keep consistent layout */
-.prod .card {
+.prod,.card {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 60%;
+
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -23,7 +24,7 @@
     width: 100%;
     height: 250px;
     /* adjust as needed */
- 
+
     /* display: block; */
 }
 
@@ -53,6 +54,14 @@
     padding: 0.75rem;
 }
 
+.card-text-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* button */
 .card-footer .btn {
     height: 40px;
@@ -61,6 +70,13 @@
 
 /* smaller image on small screens */
 @media (max-width: 576px) {
+
+    .prod,
+    .card {
+        width: 80%;
+        margin: auto;
+    }
+
     .card-img-top {
         height: 160px;
     }
