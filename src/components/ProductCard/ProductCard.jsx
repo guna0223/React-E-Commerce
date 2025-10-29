@@ -1,12 +1,9 @@
 import React from "react";
-import { Link, link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useCurrency } from "../../context/CurrencyContext";
 import "./ProductCard.css";
 
 const img_server_path = "/images/products/"
-
-
-
 
 const ProductCard = ({ product }) => {
 

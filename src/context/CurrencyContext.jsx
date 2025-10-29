@@ -35,7 +35,7 @@ export const CurrencyProvider = ({ Children }) => {
 
     //Convert USD -> select currency safly
 
-    const convertPrice = (priceIND) => {
+    const convertPrice = (priceInUSD) => {
         if (!priceInUSD) return 0;
         if (!rates || !rates[currency]) return priceInUSD;  // fallback if rates not loaded
         const converted = priceInUSD * rates[currency];
