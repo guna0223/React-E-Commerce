@@ -21,11 +21,10 @@
 /* image - fixed height, cover, centered */
 .card-img-top {
     width: 100%;
-    height: 200px;
+    height: 250px;
     /* adjust as needed */
-    object-fit: cover;
-    object-position: center;
-    display: block;
+ 
+    /* display: block; */
 }
 
 /* card body take remaining space and space items */

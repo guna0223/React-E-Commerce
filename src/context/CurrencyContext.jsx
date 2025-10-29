@@ -1,18 +1,16 @@
-import React, { createContext, useState, useEffect, useContext, Children } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 import axios from "axios";
 
 const CurrencyContext = createContext();
 
 export const useCurrency = () => useContext(CurrencyContext);
 
-export const CurrencyProvider = ({ Children }) => {
+export const CurrencyProvider = ({ children }) => {
     const [currency, setCurrency] = useState("USD");
     const [rates, setRates] = useState({});
     const [loading, setLoading] = useState(true);
 
-
-    //Fetch conversion rates from API (base USD)
-
+    // Fetch conversion rates from API (base USD)
     useEffect(() => {
         const fetchRates = async () => {
             try {
@@ -28,22 +26,21 @@ export const CurrencyProvider = ({ Children }) => {
                 console.error("Currency API Error:", err);
             } finally {
                 setLoading(false);
-            };
-        }
+            }
+        };
+
         fetchRates();
     }, []);
 
-    //Convert USD -> select currency safly
-
+    // Convert USD -> selected currency safely
     const convertPrice = (priceInUSD) => {
         if (!priceInUSD) return 0;
-        if (!rates || !rates[currency]) return priceInUSD;  // fallback if rates not loaded
+        if (!rates || !rates[currency]) return priceInUSD; // fallback if rates not loaded
         const converted = priceInUSD * rates[currency];
         return converted.toFixed(2);
     };
 
-    //Return approprite currency symbol
-
+    // Return appropriate currency symbol
     const getSymbol = () => {
         switch (currency) {
             case "USD": return "$";
@@ -57,11 +54,11 @@ export const CurrencyProvider = ({ Children }) => {
 
     const value = {
         currency, setCurrency, rates, convertPrice, getSymbol, loading,
-
     };
+
     return (
-        <CurrencyContext.Provider value={value} >
+        <CurrencyContext.Provider value={value}>
             {children}
-        </CurrencyContext.Provider >
+        </CurrencyContext.Provider>
     );
 };
