@@ -1,7 +1,6 @@
 import Carousel from "../components/Carousel/Carousel";
 import ProductCard from "../components/ProductCard/ProductCard";
 
-
 const fake_products =
     [
         {
