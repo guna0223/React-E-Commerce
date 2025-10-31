@@ -4,7 +4,8 @@
 }
 
 /* make card fill the column height and keep consistent layout */
-.prod,.card {
+.prod,
+.card {
     display: flex;
     flex-direction: column;
     height: 60%;
@@ -26,6 +27,10 @@
     /* adjust as needed */
 
     /* display: block; */
+}
+
+.discount {
+    display: flex;
 }
 
 /* card body take remaining space and space items */

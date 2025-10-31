@@ -36,14 +36,15 @@ const ProductCard = ({ product }) => {
                   {getSymbol()} {converted}
                 </p>
                 <p className="card-text card-text-description text-secondary small">
-                 {product.description}
+                  {product.description}
                 </p>
                 <p className="card-text text-secondary small">
                   (Base: ${product.price} USD)
                 </p>
-                <p className="card-text text-secondary small">
-                  {product.offer} {product.discount}
+                <p className="card-text text-secondary small discount d-flex">
+                  {product.offer} <span className="discount mx-2">{product.discount}</span>
                 </p>
+
 
               </>
             )}
